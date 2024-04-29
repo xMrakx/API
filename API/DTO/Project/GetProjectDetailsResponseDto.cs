@@ -8,14 +8,14 @@
 
     public class ProjectDetailsDataDto
     {
-        public int Id { get; set; }
+        public int ProjectId { get; set; }
         public string Name { get; set; }
         public List<ProjectDataBundlesDto> Bundles { get; set; }
     }
 
     public class ProjectDataBundlesDto
     {
-        public int Id { get; set; }
+        public int BundleId { get; set; }
         public int Count { get; set; }
         public string Name { get; set; }
     }

@@ -21,19 +21,19 @@ namespace API.Controllers
                     {
                         new CategoryBundleDto() 
                         {
-                            Id = 1,
+                            BundleId = 1,
                             Name = "Робототехнические наборы (РТН)",
                             Count = 30
                         },
                         new CategoryBundleDto()
                         {
-                            Id = 2,
+                            BundleId  = 2,
                             Name = "Робототехнические наборы (РТН)",
                             Count = 30
                         },
                         new CategoryBundleDto()
                         {
-                            Id = 3,
+                            BundleId  = 3,
                             Name = "Робототехнические наборы (РТН)",
                             Count = 30
                         }
@@ -118,7 +118,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "change-functional" )]
-        public IActionResult ChangeBundleFunctional( [FromQuery] ChangeBundleFunctionalRequestDto request )
+        public IActionResult ChangeBundleFunctional( [FromBody] ChangeBundleFunctionalRequestDto request )
         {
             if (true)
             {

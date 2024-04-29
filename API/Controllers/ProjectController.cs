@@ -20,12 +20,12 @@ namespace API.Controllers
                     {
                         new ProjectDataDto()
                         {
-                            Id = 1,
+                            ProjectId = 1,
                             Name = "Робот федор"
                         },
                         new ProjectDataDto()
                         {
-                            Id = 2,
+                            ProjectId = 2,
                             Name = "Корабль"
                         }
                     }
@@ -48,43 +48,43 @@ namespace API.Controllers
                     Success = true,
                     Data = new()
                     {
-                        Id = 1,
+                        ProjectId = 1,
                         Name = "Робот Федор",
                         Bundles = new List<ProjectDataBundlesDto>()
                         {
                             new ProjectDataBundlesDto()
                             {
-                                Id = 1,
+                                BundleId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»"
                             },
                             new ProjectDataBundlesDto()
                             {
-                                Id = 2,
+                                BundleId = 2,
                                 Count = 1,
                                 Name = "Образовательный набор «Матрёшка Z» (плата Arduino Uno на базе процессора ATmega328p)"
                             },
                             new ProjectDataBundlesDto()
                             {
-                                Id = 3,
+                                BundleId = 3,
                                 Count = 1,
                                 Name = "Робоконструктор Makeblock Ultimate Robot Kit (без контроллера)"
                             },
                             new ProjectDataBundlesDto()
                             {
-                                Id = 85,
+                                BundleId = 85,
                                 Count = 1,
                                 Name = "Робоконструктор Makeblock Starter Robot Kit (без контроллера)"
                             },
                             new ProjectDataBundlesDto()
                             {
-                                Id = 88,
+                                BundleId = 88,
                                 Count = 1,
                                 Name = "Образовательный набор «Малина Z» (одноплатный компьютер Raspberry Pi 2 Model B )"
                             },
                             new ProjectDataBundlesDto()
                             {
-                                Id = 140,
+                                BundleId = 140,
                                 Count = 1,
                                 Name = "Робототехнический набор Lego MINDSTORMS EV3 31313"
                             },
@@ -100,7 +100,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "create" )]
-        public IActionResult CreateProject( [FromQuery] CreateProjectRequestDto request )
+        public IActionResult CreateProject( [FromBody] CreateProjectRequestDto request )
         {
             if (true)
             {
@@ -109,7 +109,7 @@ namespace API.Controllers
                     Success = true,
                     Data = new()
                     {
-                        Id = 3,
+                        ProjectId = 3,
                         Name = "Что-то новое",
                         Bundles = new()
                     }
@@ -123,7 +123,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "edit" )]
-        public IActionResult EditProject( [FromQuery] EditProjectRequestDto request )
+        public IActionResult EditProject( [FromBody] EditProjectRequestDto request )
         {
             if (true)
             {
@@ -132,7 +132,7 @@ namespace API.Controllers
                     Success= true,
                     Data = new()
                     {
-                        Id = 3,
+                        ProjectId = 3,
                         Name = "Смена",
                         Bundles= new()
                     }

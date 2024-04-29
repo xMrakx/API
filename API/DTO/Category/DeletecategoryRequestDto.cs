@@ -1,8 +1,8 @@
 ﻿namespace API.DTO.Category
 {
-    public class DeletecategoryRequestDto
+    public class DeleteCategoryRequestDto
     {
-        public string AccessToken { get; set; }
-        public int CategoryId { get; set; }
+        public string accessToken { get; set; }
+        public int categoryId { get; set; }
     }
 }

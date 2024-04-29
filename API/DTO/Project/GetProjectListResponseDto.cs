@@ -10,7 +10,7 @@ namespace API.DTO.Project
 
     public class ProjectDataDto
     {
-        public int Id { get; set; }
+        public int ProjectId { get; set; }
         public string Name { get; set; }
     }
 

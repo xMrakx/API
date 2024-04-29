@@ -8,7 +8,7 @@ namespace API.Controllers
     public class CategorySetController : ControllerBase
     {
         [HttpGet( "list" )]
-        public IActionResult GetCategoryList( [FromQuery] string accesToken )
+        public IActionResult GetCategoryList( [FromQuery] string accessToken )
         {
             if (true)
             {
@@ -19,43 +19,43 @@ namespace API.Controllers
                     {
                         new CategoryDataDto()
                         {
-                            Id = 1,
+                            CategoryId = 1,
                             Name = "Робототехнические наборы (РТН)",
                             Bundles = new List<CategoryBundleDto>()
                             {
                                 new CategoryBundleDto()
                                 {
-                                    Id = 1,
+                                    BundleId = 1,
                                     Count = 30,
                                     Name = "Образовательный набор «Амперка»"
                                 },
                                 new CategoryBundleDto()
                                 {
-                                    Id = 2,
+                                    BundleId = 2,
                                     Count = 1,
                                     Name = "Образовательный набор «Матрёшка Z» (плата Arduino Uno на базе процессора ATmega328p)"
                                 },
                                 new CategoryBundleDto()
                                 {
-                                    Id = 3,
+                                    BundleId = 3,
                                     Count = 1,
                                     Name = "Робоконструктор Makeblock Ultimate Robot Kit (без контроллера)"
                                 },
                                 new CategoryBundleDto()
                                 {
-                                    Id = 85,
+                                    BundleId = 85,
                                     Count = 1,
                                     Name = "Робоконструктор Makeblock Starter Robot Kit (без контроллера)"
                                 },
                                 new CategoryBundleDto()
                                 {
-                                    Id = 88,
+                                    BundleId = 88,
                                     Count = 1,
                                     Name = "Образовательный набор «Малина Z» (одноплатный компьютер Raspberry Pi 2 Model B )"
                                 },
                                 new CategoryBundleDto()
                                 {
-                                    Id = 140,
+                                    BundleId = 140,
                                     Count = 1,
                                     Name = "Робототехнический набор Lego MINDSTORMS EV3 31313"
                                 }
@@ -64,25 +64,25 @@ namespace API.Controllers
                         },
                         new CategoryDataDto()
                         {
-                            Id = 2,
+                            CategoryId = 2,
                             Name = "Макетные платы, платформы (МП)",
                             Bundles = new List<CategoryBundleDto>()
                             {
                                 new CategoryBundleDto
                                 {
-                                    Id = 4,
+                                    BundleId = 4,
                                     Count = 13,
                                     Name = "Макетная плата Breadboard Mini (AMP-X008-C)"
                                 },
                                 new CategoryBundleDto
                                 {
-                                    Id = 5,
+                                    BundleId = 5,
                                     Count = 1,
                                     Name = "Четырёхколёсная платформа Pirate-4WD Mobile Platform DFROBOT (без контроллера)"
                                 },
                                 new CategoryBundleDto
                                 {
-                                    Id = 6,
+                                    BundleId = 6,
                                     Count = 2,
                                     Name = "Гусеничная платформа Rover 5 (без контроллера)"
                                 }
@@ -110,25 +110,25 @@ namespace API.Controllers
                     {
                         new CategoryDataDto 
                         { 
-                            Id = 3,
+                            CategoryId = 3,
                             Name = "Что-то новое",
                             Bundles = new List<CategoryBundleDto>()
                             {
                                 new CategoryBundleDto 
                                 {
-                                    Id = 1,
+                                    BundleId = 1,
                                     Count = 13,
                                     Name = "Макетная плата Breadboard Mini (AMP-X008-C)"
                                 },
                                 new CategoryBundleDto
                                 {
-                                    Id = 2,
+                                    BundleId = 2,
                                     Count = 1,
                                     Name = "Четырёхколёсная платформа Pirate-4WD Mobile Platform DFROBOT (без контроллера)"
                                 },
                                 new CategoryBundleDto
                                 {
-                                    Id = 3,
+                                    BundleId = 3,
                                     Count = 2,
                                     Name = "Гусеничная платформа Rover 5 (без контроллера)"
                                 }
@@ -142,7 +142,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "edit" )]
-        public IActionResult Editcategory( [FromQuery] EditCategoryRequestDto request )
+        public IActionResult Editcategory( [FromBody] EditCategoryRequestDto request )
         {
             if(true) 
             {
@@ -153,13 +153,13 @@ namespace API.Controllers
                     { 
                         new CategoryDataDto
                         { 
-                            Id = 1,
+                            CategoryId = 1,
                             Name = "Смена названия",
                             Bundles = new List<CategoryBundleDto>()
                             {
                                 new CategoryBundleDto
                                 {
-                                    Id = 1,
+                                    BundleId = 1,
                                     Count = 13,
                                     Name = "Макетная плата Breadboard Mini (AMP-X008-C)"
                                 }
@@ -175,7 +175,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "delete" )]
-        public IActionResult Deletecategory( [FromQuery] DeletecategoryRequestDto request )
+        public IActionResult Deletecategory( [FromBody] DeleteCategoryRequestDto request )
         {
             if (true)
             {

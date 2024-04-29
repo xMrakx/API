@@ -2,8 +2,8 @@
 {
     public class ChangeBundleFunctionalRequestDto
     {
-        public string AccessToken { get; set; }
-        public int ItemId { get; set; }
-        public int Type { get; set; }
+        public string accessToken { get; set; }
+        public int itemId { get; set; }
+        public int type { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class GetBundleDetailsRequestDto
     {
-        public string AccessToken { get; set; }
-        public int Id { get; set; }
+        public string accessToken { get; set; }
+        public int bundleId { get; set; }
     }
 }

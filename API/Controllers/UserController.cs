@@ -35,7 +35,7 @@ namespace API.Controllers
                     Success = true,
                     Data = new UserDataDto() 
                     {
-                        Id = 1,
+                        UserId = 1,
                         LastName = "Иванов",
                         Name = "Иван",
                         Patronymic = "Иванович",

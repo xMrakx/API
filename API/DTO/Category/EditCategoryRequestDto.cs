@@ -2,9 +2,9 @@
 {
     public class EditCategoryRequestDto
     {
-        public string AccessToken { get; set; }
-        public string CategoryId { get; set; }
-        public string Name { get; set; }
-        public List<int > BundleIds { get; set; }
+        public string accessToken { get; set; }
+        public string categoryId { get; set; }
+        public string name { get; set; }
+        public List<int > bundleIds { get; set; }
     }
 }

@@ -2,8 +2,8 @@
 {
     public class EditProjectRequestDto
     {
-        public string AccessToken { get; set; }
-        public int ProjectId { get; set; }
-        public string Name { get; set; }
+        public string accessToken { get; set; }
+        public int projectId { get; set; }
+        public string name { get; set; }
     }
 }

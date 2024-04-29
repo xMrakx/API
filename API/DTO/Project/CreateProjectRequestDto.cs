@@ -2,7 +2,7 @@
 {
     public class CreateProjectRequestDto
     {
-        public string AccessToken { get; set; }
-        public string Name { get; set; }
+        public string accessToken { get; set; }
+        public string name { get; set; }
     }
 }
