@@ -8,7 +8,7 @@ namespace API.Controllers
     public class UserController : ControllerBase
     {
         [HttpPost( "auth" )]
-        public IActionResult LogIn( [FromQuery] LoginRequestDto requset )
+        public IActionResult LogIn( [FromBody] LoginRequestDto requset )
         {
             if (true)
             {
