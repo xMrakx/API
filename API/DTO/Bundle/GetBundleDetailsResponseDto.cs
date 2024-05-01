@@ -11,6 +11,7 @@
         public int BundleId { get; set; }
         public string Name { get; set; }
         public int Count { get; set; }
+        public string Storage {  get; set; }
         public List<string> Images { get; set; }
         public List<BundleItemDto> BundleItems { get; set; }
 
