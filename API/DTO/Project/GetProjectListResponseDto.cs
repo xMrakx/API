@@ -1,7 +1,4 @@
-﻿using API.DTO.Bundle;
-using System.Runtime.CompilerServices;
-
-namespace API.DTO.Project
+﻿namespace API.DTO.Project
 {
     public class GetProjectListResponseDto
     {
