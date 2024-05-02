@@ -1,6 +1,5 @@
 ﻿using API.DTO.Bundle;
 using API.DTO.Category;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -52,14 +51,14 @@ namespace API.Controllers
                     Success = true,
                     Data = new()
                     {
-                        Id = 1,
+                        BundleId = 1,
                         Name = "Робототехнические наборы (РТН)",
                         Count = 30,
-                        Items = new List<BundleItemDto>()
+                        BundleItems = new List<BundleItemDto>()
                         {
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 1,
                                 Name = "Плата Arduino Uno",
                                 FunctionalType = 0,
@@ -67,7 +66,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 2,
                                 Name = "Датчик линии",
                                 FunctionalType = 1,
@@ -75,7 +74,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 1,
                                 Name = "Датчик наклона",
                                 FunctionalType = 1,
@@ -83,16 +82,16 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 0,
                                 Available = false,
-                                UnavaibleReason = "Участвует в сборке №6794365"
+                                UnavailableReason = "Участвует в сборке №6794365"
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 2,
@@ -100,7 +99,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 1,
@@ -127,14 +126,14 @@ namespace API.Controllers
                     Success = true,
                     Data = new()
                     {
-                        Id = 1,
+                        BundleId = 1,
                         Name = "Робототехнические наборы (РТН)",
                         Count = 30,
-                        Items = new List<BundleItemDto>()
+                        BundleItems = new List<BundleItemDto>()
                         {
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 1,
                                 Name = "Плата Arduino Uno",
                                 FunctionalType = 2,
@@ -142,7 +141,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 2,
                                 Name = "Датчик линии",
                                 FunctionalType = 2,
@@ -150,7 +149,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 1,
                                 Name = "Датчик наклона",
                                 FunctionalType = 1,
@@ -158,16 +157,16 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 0,
                                 Available = false,
-                                UnavaibleReason = "Участвует в сборке №6794365"
+                                UnavailableReason = "Участвует в сборке №6794365"
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 2,
@@ -175,7 +174,7 @@ namespace API.Controllers
                             },
                             new BundleItemDto()
                             {
-                                Id = 1,
+                                BundleItemId = 1,
                                 Count = 30,
                                 Name = "Образовательный набор «Амперка»",
                                 FunctionalType = 1,

@@ -99,7 +99,7 @@ namespace API.Controllers
         }
 
         [HttpPost( "create" )]
-        public IActionResult CreateCategory( [FromQuery] CreateCategoryRequestDto request )
+        public IActionResult CreateCategory( [FromBody] CreateCategoryRequestDto request )
         {
             if (true)
             {
